@@ -30,11 +30,20 @@ for (let i = 0; i < 2; i++){
         personalMovieDB.movies[a] = b;
     } else {
         i--;
-    }
-        
+      } 
           
-};
+}
+
+if (personalMovieDB.count > 30){
+    console.log('Вы киноман');
+} else if (personalMovieDB.count < 10) {
+    console.log('Просмотренно довольно мало фильмов');
+} else { 
+    console.log('Вы классический зритель');
     
+}
+
 console.log(personalMovieDB);
+
 
 
