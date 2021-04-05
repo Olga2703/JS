@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             movieDB.movies.push(newFilm);
             sortArr(movieDB.movies);
-    
+
             createMovieList(movieDB.movies, movieList);
         }
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createMovieList(films, parent) {
         parent.innerHTML = "";
         sortArr(films);
-    
+
         films.forEach((film, i) => {
             parent.innerHTML += `
                 <li class="promo__interactive-item">${i + 1} ${film}
@@ -99,5 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     deleteAdv(adv);
     makeChanges();
     createMovieList(movieDB.movies, movieList);
+
+
 
 });
